@@ -1,10 +1,10 @@
-This program is from book "the litte schemer". It is a very simple scheme interpreter, 
-only support anonymous function and several built-in functions(such as: cons, car, cdr, 
+This program is from book "the little schemer". It is a very simple scheme interpreter, 
+only supports anonymous function and several built-in functions(such as: cons, car, cdr, 
 number?...). It does't support string(instead using expression quote for it). for branch
-expression, it only has cond and else.
-about implements: function value accept an expression as an argument, and eval its value.
+expressions, it only has cond and else.
+about implements: function value accepts an expression as an argument, and evals its value.
 expression: atom|list
 atom: number[0-9]{1}|#t|#f|cons|car|cdr|null?|atom?|eq?|zero?|add1?|sub1?|number?|identifier
 list: (quote ...)|(lambda ...)|(cond ...)|((built-in-function|lambda-function ...)
 
-In function, it uses a table(which is a list of entries) to save the values of arguments.
+In functions, it uses a table(which is a list of entries) to save the values of arguments.
